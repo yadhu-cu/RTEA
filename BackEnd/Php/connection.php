@@ -1,6 +1,6 @@
 <?php
 // Data Base Connection
-$con = mysqli_connect("localhost","root","","bigdb"); 
+$con = mysqli_connect("localhost","root","","rtea"); 
  
 // Check connection
 if (mysqli_connect_errno())
