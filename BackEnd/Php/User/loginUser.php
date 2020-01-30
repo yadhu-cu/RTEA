@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+include('../connection.php');
  $phoneNumber = $_POST ['phoneNumber'];
  $password = $_POST['password'];
 
