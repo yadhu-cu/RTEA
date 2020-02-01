@@ -7,6 +7,14 @@ function test_str() {
             if (b.match(/[0-9]/g) && b.length == 10) 
             {
             
+               
+            }
+            else
+                a = "Invalid Phone Number";
+                alert(a)
+                
+    
+    
                 if (str.match(/[a-z]/g) && str.match( 
                     /[A-Z]/g) && str.match( 
                     /[0-9]/g) && str.match( 
@@ -18,14 +26,6 @@ function test_str() {
             else 
                 res = "Invalid Password"; 
                 alert(res)
-            }
-            else
-                a = "Invalid Phone Number";
-                alert(a)
-                
-    
-    
- 
     
     
             
