@@ -23,14 +23,14 @@
 					<h3 style="color: #0a5ab6;">User Registration </h3>
 					<div class="form-group">
 						<input type="text" placeholder="User Name" id="userName" name="userName" class="form-control">
-						<input type="number" placeholder="Phone Number" id="phoneNumber" name="phoneNumber" class="form-control">
+						<input type="number" placeholder="Phone Number" onchange="phone_number() " id="phoneNumber" name="phoneNumber" class="form-control">
 					</div>
 					<div class="form-wrapper">
 						<input type="text" placeholder="Address" id="address" name="address" class="form-control">
 						<i class="zmdi zmdi-account"></i>
 					</div>
 					<div class="form-wrapper">
-						<input type="text" placeholder="Email id" id="emailId"  name="emailId" class="form-control">
+						<input type="email" placeholder="Email id" id="emailId"  name="emailId" class="form-control">
 						<i class="zmdi zmdi-email"></i>
 					</div>
 					<div class="form-group">
@@ -44,11 +44,11 @@
 						<i class="zmdi zmdi-caret-down" style="font-size: 16px"></i>
 					</div>
 					<div class="form-wrapper">
-						<input type="password" placeholder="Password" id="passWord" name="passWord" class="form-control">
+						<input type="password" placeholder="Password" onchange="test_ps()" id="passWord" name="passWord" class="form-control">
 						<i class="zmdi zmdi-lock"></i>
 					</div>
 					<div class="form-wrapper">
-						<input type="password" placeholder="Confirm Password" id="confirmPassword" class="form-control">
+						<input type="password" placeholder="Confirm Password" onchange="Password()" id="confirmPassword" class="form-control">
 						<i class="zmdi zmdi-lock"></i>
 					</div>
 					<button style="background-color: #0a5ab6;">Register
@@ -57,6 +57,6 @@
 				</form>
 			</div>
 		</div>
-		
+		<script src="../User/js/regval.js"></script>
 	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
