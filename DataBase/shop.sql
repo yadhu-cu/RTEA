@@ -26,19 +26,19 @@ SET time_zone = "+00:00";
 -- Table structure for table `shop`
 --
 
-CREATE TABLE `shop` (
-  `ShopID` int(11) NOT NULL,
-  `PhoneNumber` varchar(15) NOT NULL,
-  `ShopName` varchar(100) NOT NULL,
-  `Password` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `shop`
+-- IndexCREATE TABLE `shop` (
+  `ShopID` int(11) NOT NULL,
+  `PhoneNumber` varchar(15) NOT NULL,
+  `ShopName` varchar(100) NOT NULL,
+  `Password` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;es for table `shop`
 --
 ALTER TABLE `shop`
   ADD PRIMARY KEY (`ShopID`);
