@@ -11,9 +11,7 @@ function test_pn() {
             }
             else
               
-                alert("Invalid Phone Number")
-                
-    
+                alert("Invalid Phone number")
         }
         function test_ps() { 
             var str = document.getElementById("password").value; 
@@ -29,10 +27,4 @@ function test_pn() {
             else 
                 
                 alert("Invalid Password")
-    
-    
-            
-                    
-
 } 
-
