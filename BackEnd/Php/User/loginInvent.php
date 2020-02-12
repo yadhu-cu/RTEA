@@ -9,7 +9,9 @@ include('../connection.php');
  if ($check == true){
      echo "success";
  }
-
+else{
+    echo "login faild";
+}
 
 
 ?>
