@@ -23,36 +23,35 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `inventory`
+-- Table structure for table `shop`
 --
 
-CREATE TABLE `inventory` (
-  `id` int(11) NOT NULL,
-  `phoneNumber` varchar(15) NOT NULL,
-  `companyName` varchar(50) NOT NULL,
-  `password` varchar(15) NOT NULL,
-  `location` varchar(60) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `inventory`
+-- IndexCREATE TABLE `shop` (
+  `ShopID` int(11) NOT NULL,
+  `PhoneNumber` varchar(15) NOT NULL,
+  `ShopName` varchar(100) NOT NULL,
+  `Password` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;es for table `shop`
 --
-ALTER TABLE `inventory`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `shop`
+  ADD PRIMARY KEY (`ShopID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `inventory`
+-- AUTO_INCREMENT for table `shop`
 --
-ALTER TABLE `inventory`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `shop`
+  MODIFY `ShopID` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

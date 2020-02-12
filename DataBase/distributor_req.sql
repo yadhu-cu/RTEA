@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 03, 2020 at 05:25 AM
+-- Generation Time: Feb 11, 2020 at 07:38 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -23,15 +23,15 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `inventory`
+-- Table structure for table `distributor_req`
 --
 
-CREATE TABLE `inventory` (
-  `id` int(11) NOT NULL,
-  `phoneNumber` varchar(15) NOT NULL,
-  `companyName` varchar(50) NOT NULL,
-  `password` varchar(15) NOT NULL,
-  `location` varchar(60) NOT NULL
+CREATE TABLE `distributor_req` (
+  `ProductReq_ID` int(11) NOT NULL,
+  `From_ID` int(11) NOT NULL,
+  `Product_ID` int(11) NOT NULL,
+  `Quantity` int(11) NOT NULL,
+  `price` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -39,20 +39,20 @@ CREATE TABLE `inventory` (
 --
 
 --
--- Indexes for table `inventory`
+-- Indexes for table `distributor_req`
 --
-ALTER TABLE `inventory`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `distributor_req`
+  ADD PRIMARY KEY (`ProductReq_ID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `inventory`
+-- AUTO_INCREMENT for table `distributor_req`
 --
-ALTER TABLE `inventory`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `distributor_req`
+  MODIFY `ProductReq_ID` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -19,7 +19,7 @@
 				<div class="image-holder">
 					<img src="../User/images/bg.jpg" alt="">
 				</div>
-				<form action="">
+				<form action="../BackEnd/Php/User/RegisterUser.php" method="POST">
 					<h3 style="color: #0a5ab6;">User Registration </h3>
 					<div class="form-group">
 						<input type="text" placeholder="User Name" id="userName" name="userName" class="form-control">
@@ -44,7 +44,8 @@
 						<i class="zmdi zmdi-caret-down" style="font-size: 16px"></i>
 					</div>
 					<div class="form-wrapper">
-						<input type="password" placeholder="Password" onchange="test_ps()" id="passWord" name="passWord" class="form-control">
+						<input type="password" placeholder="Password" onchange="test_ps()" id="passWord" name="password" class="form-control">
+
 						<i class="zmdi zmdi-lock"></i>
 					</div>
 					<div class="form-wrapper">

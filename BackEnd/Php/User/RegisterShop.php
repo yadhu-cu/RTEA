@@ -4,9 +4,9 @@ include('../connection.php');
 $userName = $_POST['userName'];
 $password = $_POST['password'];
 $phoneNumber = $_POST['phoneNumber'];
-$email_ID = $_POST['emailId'];
+//$email_ID = $_POST['email_ID'];
 
-$query="INSERT INTO `user`(`Name`, `PhoneNumber`, `Email_ID`, `Password`) VALUES ('$userName','$phoneNumber','$email_ID','$password')";
+$query="INSERT INTO `shop`( `PhoneNumber`, `ShopName`, `Password`) VALUES  ('$phoneNumber','$userName','$password')";
 $result=mysqli_query($con,$query); 
 //header('Location:../profile.php');
 // completed
