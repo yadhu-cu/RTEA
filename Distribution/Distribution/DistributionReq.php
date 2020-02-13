@@ -236,19 +236,6 @@
                           </div>
                           </div>
                           <div class="form-group row">
-                              <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Product Subcategory</label>
-                            <div class="col-sm-9">
-                            <select class="form-control" id="">
-                              <option>Product Subcategory</option>
-                              <option></option>
-                              <option></option>
-                              <option></option>
-                              <option></option>
-                              <option></option>
-                            </select>
-                          </div>
-                          </div>
-                          <div class="form-group row">
                             <label for="exampleInputMobile" class="col-sm-3 col-form-label">Product Name</label>
                             <div class="col-sm-9">
                               <input type="text" class="form-control" id="productName" name="productName" placeholder="product name">
@@ -308,32 +295,6 @@
                           </select>
                         </div>
                         </div>
-                            <div class="form-group row">
-                                <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Product Category</label>
-                              <div class="col-sm-9">
-                              <select class="form-control" id="">
-                                <option>Product Category</option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                              </select>
-                            </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Product Subcategory</label>
-                              <div class="col-sm-9">
-                              <select class="form-control" id="">
-                                <option>Product Subcategory</option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                              </select>
-                            </div>
-                            </div>
                           <div class="form-group row">
                             <label for="exampleInputMobile" class="col-sm-3 col-form-label">Product Name</label>
                             <div class="col-sm-9">
