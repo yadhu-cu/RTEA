@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect("localhost","root","","dist");
+$link = mysqli_connect("localhost","root","","rtea");
 $distuname= $_POST['distuname'];
 $distPlace=$_POST['distPlace'];
 $phoneNumber=$_POST['phoneNumber'];
