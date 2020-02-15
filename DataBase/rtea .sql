@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 13, 2020 at 07:12 AM
+-- Generation Time: Feb 14, 2020 at 05:07 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -197,6 +197,13 @@ CREATE TABLE `shop_link` (
   `Location` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `shop_link`
+--
+
+INSERT INTO `shop_link` (`Link_ID`, `Product_ID`, `Shop_ID`, `NumberOf`, `Location`) VALUES
+(1, 1, 1, 2, 'ads');
+
 -- --------------------------------------------------------
 
 --
@@ -207,8 +214,16 @@ CREATE TABLE `shop_products` (
   `Product_ID` int(11) NOT NULL,
   `Name` varchar(50) NOT NULL,
   `Price` float NOT NULL,
-  `Description` varchar(200) NOT NULL
+  `Description` varchar(200) NOT NULL,
+  `superSubID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `shop_products`
+--
+
+INSERT INTO `shop_products` (`Product_ID`, `Name`, `Price`, `Description`, `superSubID`) VALUES
+(1, 'Tomato', 30, 'Ntg', 1);
 
 -- --------------------------------------------------------
 
@@ -227,7 +242,7 @@ CREATE TABLE `shop_subcategories` (
 --
 
 INSERT INTO `shop_subcategories` (`SubCategorie_ID`, `Categorie_ID`, `Name`) VALUES
-(1, 0, 'FastFood'),
+(1, 1, 'FastFood'),
 (2, 1, 'Grocery ');
 
 -- --------------------------------------------------------
@@ -247,7 +262,7 @@ CREATE TABLE `shop_supersub` (
 --
 
 INSERT INTO `shop_supersub` (`SuperSubCat_ID`, `SubCategorie_ID`, `Name`) VALUES
-(1, 1, 'Vegetables');
+(1, 2, 'Vegetables');
 
 -- --------------------------------------------------------
 
@@ -463,12 +478,12 @@ ALTER TABLE `shop_info`
 -- AUTO_INCREMENT for table `shop_link`
 --
 ALTER TABLE `shop_link`
-  MODIFY `Link_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Link_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `shop_products`
 --
 ALTER TABLE `shop_products`
-  MODIFY `Product_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Product_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `shop_subcategories`
 --
