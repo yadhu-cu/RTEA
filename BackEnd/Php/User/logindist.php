@@ -10,7 +10,7 @@
      header('location:../../../Distribution/Distribution/home.html');
  }
 else{
-    echo "login faild";
+    echo "login failed";
 }
 
 
