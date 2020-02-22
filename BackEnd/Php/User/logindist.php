@@ -1,11 +1,5 @@
 <?php
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
-// Data Base Connection
- $con = mysqli_connect("localhost","root","","rtea");
+ include('../connection.php');
  $phn_No = $_POST ['phn_No'];
  $password = $_POST['password'];
 
