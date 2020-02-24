@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Stellar Admin</title>
+    <title>RTEA MARKETING</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="../../vendors/flag-icon-css/css/flag-icon.min.css">
@@ -31,7 +31,7 @@
           <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
-          <h5 class="mb-0 font-weight-medium d-none d-lg-flex">Welcome to RTEA Distribution</h5>
+          <h5 class="mb-0 font-weight-medium d-none d-lg-flex">Welcome to RTEA Marketing</h5>
           <ul class="navbar-nav navbar-nav-right ml-auto">
             <form class="search-form d-none d-md-block" action="#" method="POST" >
               <i class="icon-magnifier"></i>
@@ -217,8 +217,8 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">AD DETAILS</h4>
-                    <p class="card-description"></p>
-                    <form class="forms-sample">
+                    <p class="card-description">About Ad</p>
+                    <form class="forms-sample" action="./ad.php" method="POST">
                       <!-- <div class="form-group row">
                          <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label>
                         <div class="col-sm-9">
@@ -238,7 +238,7 @@
                       <div class="form-group row">
                         <!-- <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label> -->
                         <div class="col-sm-12">
-                          <input type="text" class="form-control" id="cat_Ad" name="cat_Ad" placeholder="CATEGORY OF AD">
+                          <input type="text" class="form-control" id="cat_Prod" name="cat_Prod" placeholder="CATEGORY OF PRODUCT">
                         </div>
                       </div>
                       <div class="form-group row">
@@ -250,11 +250,11 @@
                       <div class="form-group row">
                         <!-- <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Re Password</label> -->
                         <div class="col-sm-12">
-                          <input type="textarea" class="form-control" id="description" name="description" placeholder="DESCRIPTION">
+                          <input type="text"row="3" class="form-control" id="description" name="description" placeholder="CONTENT FOR AD">
                         </div>
                       </div>
                       
-                      <button type="submit" class="btn btn-primary mr-2">Request</button>
+                      <button type="submit" class="btn btn-primary mr-2">SAVE</button>
                       <button class="btn btn-light">Cancel</button>
                     </form>
                   </div>
@@ -263,8 +263,8 @@
               <div class="col-md-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">MEMBERSHIP </h4>
-                    <p class="card-description"></p>
+                    <h4 class="card-title">PRODUCT DETAILS</h4>
+                    <p class="card-description">About product placing</p>
                     <form class="forms-sample">
                       <div class="form-group row">
                         <!-- <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Password</label> -->
@@ -278,23 +278,22 @@
                           <input type="text" class="form-control" id="price" name="price" placeholder="PRICE">
                         </div>
                       </div>
+                      <div class="form-group row">
+                        <!-- <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Re Password</label> -->
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control" id="" name="" placeholder="DISCOUNTS">
+                        </div>
+                      </div>
                       <div class="form-group">
                         <input type="file" name="img[]" class="file-upload-default">
                         <div class="input-group col-xs-12">
-                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                          <input type="text" class="form-control file-upload-info" disabled placeholder="UPLOAD IMAGE">
                           <span class="input-group-append">
                             <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
                           </span>
                         </div>
                       </div>
-                      <div class="form-group row">
-                        <!-- <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Re Password</label> -->
-                        <div class="col-sm-12">
-                          <input type="text" class="form-control" id="exampleInputConfirmPassword2" placeholder="Price">
-                        </div>
-                      </div>
-                      
-                      <button type="submit" class="btn btn-primary mr-2">Request</button>
+                      <button type="submit" class="btn btn-primary mr-2">SAVE</button>
                       <button class="btn btn-light">Cancel</button>
                     </form>
                   </div>
@@ -304,45 +303,51 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">MEMBERSHIP </h4>
-                    <p class="card-description"></p>
+                    <p class="card-description">Placing Info</p>
                     <form class="forms-sample">
                       <div class="form-group row">
                         <!-- <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label> -->
                         <div class="col-sm-12">
                           <select class="form-control">
-                            <option>Type of membership</option>
-                            <option>Silver</option>
-                            <option>Gold</option>
-                            <option>platinum</option>
+                            <option>MEMBERSHIP TYPE</option>
+                            <option>SILVER</option>
+                            <option>GOLD</option>
+                            <option>PLATINUM</option>
                           </select>
                         </div>
                       </div>
-                      <div class="form-group row">
-                        <!-- <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Email</label> -->
-                        <div class="col-sm-12">
-                          <input type="email" class="form-control" id="exampleInputEmail2" placeholder=" SHOP NAME">
-                        </div>
+                      <div class="form-group">
+                        <!-- <label for="exampleFormControlSelect1">AD PLACING</label> -->
+                        <select class="form-control form-control-lg" id="">
+                          <option>PLACE AD IN</option>
+                          <option>SHOP</option>
+                          <option>CUSTOMER</option>
+                          <option>DISTRIBUTOR</option>
+                        </select>
                       </div>
-                      <div class="form-group row">
-                        <!-- <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label> -->
-                        <div class="col-sm-12">
-                          <input type="text" class="form-control" id="exampleInputMobile" placeholder="PRODUCT NAME">
-                        </div>
+                      <div class="form-group">
+                        <select class="form-control form-control-lg" id="slot" name="slot" >
+                          <option>SLOT SELECTION</option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                          <option></option>
+                        </select>
                       </div>
-                      <div class="form-group row">
-                        <!-- <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Password</label> -->
+                      <!-- <div class="form-group row">
+                        <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Password</label> 
                         <div class="col-sm-12">
-                          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="QUANTITY(litre/nos/kg)">
+                          <input type="text" class="form-control" id="" name="" placeholder="">
                         </div>
-                      </div>
+                      </div> -->
                       <div class="form-group row">
                         <!-- <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Re Password</label> -->
                         <div class="col-sm-12">
-                          <input type="text" class="form-control" id="exampleInputConfirmPassword2" placeholder="Price">
+                          <input type="text" class="form-control" id="" name="" placeholder="PRICE">
                         </div>
                       </div>
                       
-                      <button type="submit" class="btn btn-primary mr-2">Request</button>
+                      <button type="submit" class="btn btn-primary mr-2">PLACE</button>
                       <button class="btn btn-light">Cancel</button>
                     </form>
                   </div>
