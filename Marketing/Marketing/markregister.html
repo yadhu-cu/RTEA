@@ -30,18 +30,30 @@
                 </div>
                 <h4>New here?</h4>
                 <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
-                <form class="pt-3" action="../Distribution/php/registerdist.php" method="POST" >
+                <form class="pt-3" action="../../BackEnd/Php/User/RegisterInvent.php" method="POST" >
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" id="distuname" name="distuname" placeholder="Username">
+                    <input type="number" placeholder="Phone Number" id="phoneNumber" name="phoneNumber" class="form-control">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" id="distPlace" name="distPlace" placeholder="place">
+                    <input type="text" placeholder="Company Name" id="companyName" name="companyName" class="form-control">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" id="phoneNumber" name="phoneNumber" placeholder="phoneNumber">
+                    <input type="textarea" placeholder="Company Address" id="companyAddress" name="companyAddress" class="form-control">
+                  </div>
+                  <div class="form-group ">
+                    <!-- <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label> -->
+                    <div class="col-sm-12">
+                      <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                        <option>location</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password">
+                    <input type="password" placeholder="Password" id="passWord" name="password" class="form-control">
                   </div>
                   <!-- <div class="mb-4">
                     <div class="form-check">
