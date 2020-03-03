@@ -43,8 +43,8 @@
                   <div class="form-group">
                     <select name="location" id="location" class="form-control">
                        <?php
-                       include('../../BackEnd/php/connection.php');
-                       $query = mysqli_query($con,"select * from `location`");
+                       include('../BackEnd/php/connection.php');
+                       $query = mysqli_query ($con, "SELECT * FROM `location`");
                        while($row = mysqli_fetch_array($query))
                        {
                          echo "<option>".$row['Name']."</option>";
