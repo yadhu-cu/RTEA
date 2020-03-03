@@ -286,6 +286,10 @@
                           $query = mysqli_query($con, "SELECT * FROM `location`");
                           while($row = mysqli_fetch_array($query))
                          { 
+
+
+
+                          
                           echo "<option >".$row['Name']."</option>" ;
                           
                           }?>
