@@ -1,15 +1,14 @@
 <?php
 include('../connection.php');
 
-$CompanyName = $_POST['userName'];
-$password = $_POST['password'];
 $phoneNumber = $_POST['phoneNumber'];
-//$email_ID = $_POST['email_ID'];
+$companyName = $_POST['companyName'];
+$companyAddress = $_POST['companyAddress'];
+$location = $_POST['location'];
+$password = $_POST['password'];
 
-
-$query="INSERT INTO `inventory`( `phoneNumber`, `companyName`, `password`) VALUES  ('$phoneNumber','$CompanyName','$password')";
-$result=mysqli_query($con,$query); 
-
-//header('Location:../profile.php');
+$query = "INSERT INTO `inventory`(`phoneNumber`, `companyName`, `password`, `location`, `companyAddress`) VALUES ('$phoneNumber','$companyName','$password','$location','$companyAddress')";
+$result = mysqli_query($con,$query);
+header('location:../../../Marketing/index.html');
 // completed
 ?>
