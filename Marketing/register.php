@@ -30,7 +30,7 @@
                 </div>
                 <h4>New here?</h4>
                 <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
-                <form class="pt-3" action="../RegisterInvent.php" method="POST" >
+                <form class="pt-3" action="../Marketing/Marketing/RegisterInvent.php" method="POST" >
                   <div class="form-group">
                     <input type="number" placeholder="Phone Number" id="phoneNumber" name="phoneNumber" class="form-control">
                   </div>

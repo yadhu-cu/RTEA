@@ -7,7 +7,7 @@ $id = $_POST ['id'];
  $result = mysqli_query($con, $query);
  $check = mysqli_fetch_array($result);
  if ($check == true){
-     header('location:../../../Marketing/Marketing/home.html');
+     header('location:../../../Marketing/Marketing/home.php');
  }
 else{
     echo "login faild";
