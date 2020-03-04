@@ -219,20 +219,18 @@
               </nav>
             </div> -->
             <div class="row" >
-              <div class="col-md-12 grid-margin stretch-card">
+              <div class="col-md-8 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">PRODUCT REQUEST</h4>
-                    <p class="card-description">From Shops under your Location</p>
+                    <h4 class="card-title">SHOP LIST</h4>
+                    <p class="card-description">Shops under your Location</p>
                     <table class="table">
                       <thead>
                         <tr>
-                          <th><b>LOCATION</b></th>
-                          <th><b>SHOP NAME</b></th>
-                          <th><b>PRODUCT</b></th>
-                          <th><b>QUANTITY</b></th>
-                          <th><b>DUE DATE</b></th>
-                          <th><b></b></th>
+                          <th>SHOP NAME</th>
+                          <th>TYPE</th>
+                          <th>PRODUCT</th>
+                          <th>STOCK</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -271,7 +269,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 grid-margin stretch-card" hidden>
+              <div class="col-md-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">SHOP PRODUCT REQUEST</h4>
@@ -286,10 +284,6 @@
                           $query = mysqli_query($con, "SELECT * FROM `location`");
                           while($row = mysqli_fetch_array($query))
                          { 
-
-
-
-                          
                           echo "<option >".$row['Name']."</option>" ;
                           
                           }?>
