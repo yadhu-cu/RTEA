@@ -216,9 +216,9 @@
               <div class="col-md-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">AD DETAILS</h4>
+                    <h4 class="card-title">AD REGISTER</h4>
                     <p class="card-description"></p>
-                    <form class="forms-sample">
+                    <form class="forms-sample" action="ad_register.php" method="POST">
                       <!-- <div class="form-group row">
                          <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label>
                         <div class="col-sm-9">
@@ -250,7 +250,7 @@
                       <div class="form-group row">
                         <!-- <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Re Password</label> -->
                         <div class="col-sm-12">
-                          <input type="textarea" class="form-control" id="description" name="description" placeholder="DESCRIPTION">
+                          <textarea class="form-control"  placeholder="DESCRIPTION" id="description" name="description"></textarea>
                         </div>
                       </div>
                       
@@ -263,13 +263,13 @@
               <div class="col-md-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">MEMBERSHIP </h4>
+                    <h4 class="card-title">AD DETAILS </h4>
                     <p class="card-description"></p>
-                    <form class="forms-sample">
+                    <form class="forms-sample" action="ad_details.php" method="POST">
                       <div class="form-group row">
                         <!-- <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Password</label> -->
                         <div class="col-sm-12">
-                          <input type="date" class="form-control" id="time" name="time" placeholder="TIME PERIOD">
+                          <input type="date" class="form-control" id="date" name="date" placeholder="date">
                         </div>
                       </div>
                       <div class="form-group row">
@@ -279,7 +279,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <input type="file" name="img[]" class="file-upload-default">
+                        <input type="file" name="image" id="image" class="file-upload-default">
                         <div class="input-group col-xs-12">
                           <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
                           <span class="input-group-append">
@@ -290,7 +290,7 @@
                       <div class="form-group row">
                         <!-- <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Re Password</label> -->
                         <div class="col-sm-12">
-                          <input type="text" class="form-control" id="exampleInputConfirmPassword2" placeholder="Price">
+                          <input type="text" class="form-control" id="discount" name="discount" placeholder="Discount">
                         </div>
                       </div>
                       
@@ -303,13 +303,13 @@
               <div class="col-md-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">MEMBERSHIP </h4>
+                    <h4 class="card-title">MEMBERSHIP DETAILS</h4>
                     <p class="card-description"></p>
-                    <form class="forms-sample">
+                    <form class="forms-sample" action="ad_membership.php" method="POST">
                       <div class="form-group row">
                         <!-- <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label> -->
                         <div class="col-sm-12">
-                          <select class="form-control">
+                          <select class="form-control" name="membership" id="membership">
                             <option>Type of membership</option>
                             <option>Silver</option>
                             <option>Gold</option>
@@ -320,28 +320,31 @@
                       <div class="form-group row">
                         <!-- <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Email</label> -->
                         <div class="col-sm-12">
-                          <input type="email" class="form-control" id="exampleInputEmail2" placeholder=" SHOP NAME">
+                          <input type="text" class="form-control" id="shopname" name="shopname" placeholder=" SHOP NAME">
                         </div>
                       </div>
                       <div class="form-group row">
                         <!-- <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label> -->
                         <div class="col-sm-12">
-                          <input type="text" class="form-control" id="exampleInputMobile" placeholder="PRODUCT NAME">
+                          <select class="form-control" id="slot" name="slot">
+                            <option>SLOTS</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="form-group row">
                         <!-- <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Password</label> -->
                         <div class="col-sm-12">
-                          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="QUANTITY(litre/nos/kg)">
+                          <select class="form-control" id="pricead" name="pricead">
+                            <option>PRICE OF AD</option>
+                            <option>50K</option>
+                            <option>100K</option>
+                            <option>150K</option>
+                          </select>
                         </div>
-                      </div>
-                      <div class="form-group row">
-                        <!-- <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Re Password</label> -->
-                        <div class="col-sm-12">
-                          <input type="text" class="form-control" id="exampleInputConfirmPassword2" placeholder="Price">
-                        </div>
-                      </div>
-                      
+                      </div> 
                       <button type="submit" class="btn btn-primary mr-2">Request</button>
                       <button class="btn btn-light">Cancel</button>
                     </form>
