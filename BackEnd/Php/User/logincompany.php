@@ -1,5 +1,6 @@
 <?php
 include('../connection.php');
+SESSION_START();
 $id = $_POST ['id'];
  $password = $_POST['password'];
 
@@ -7,7 +8,9 @@ $id = $_POST ['id'];
  $result = mysqli_query($con, $query);
  $check = mysqli_fetch_array($result);
  if ($check == true){
-     header('location:../../../Marketing/Marketing/home.php');
+    $_SESSION['id'] = $_POST['id'];
+    echo  $_SESSION['id'];
+    header('location:../../../Marketing/Marketing/home.php');
  }
 else{
     echo "login faild";

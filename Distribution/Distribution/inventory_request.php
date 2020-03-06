@@ -264,24 +264,35 @@
                             <h4 class="card-title">INVENTORY PRODUCT REQUEST</h4>
                             <p class="card-description"></p>
                             <form class="forms-sample" action="../Distribution/inventory_req.php" method="POST">
-                              <div class="form-group row">
+                            <div class="form-group row">
+                                <!-- <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label> -->
+                                <div class="col-sm-9">
+                                  <select name="location" id="location" class="form-control">
+                                    <?php
+                                    include('../../BackEnd/php/connection.php');
+                                    $query = mysqli_query ($con, "SELECT * FROM `location`");
+                                    while($row = mysqli_fetch_array($query))
+                                    {
+                                      echo "<option>".$row['Name']."</option>";
+                                    }
+                                    ?>
+                                 </select>
+                                </div>
+                              </div>
+                               <div class="form-group row">
                                 <!-- <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Email</label> -->
                                 <div class="col-sm-9">
                                   <input type="text" class="form-control" id="inventoryname" name="inventoryname" placeholder="INVENTORY NAME">
                                 </div>
                               </div>
+                              
                               <div class="form-group row">
                                 <!-- <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label> -->
                                 <div class="col-sm-9">
                                   <input type="text" class="form-control" id="productname" name="productname" placeholder="PRODUCT NAME">
                                 </div>
                               </div>
-                              <div class="form-group row">
-                                <!-- <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label> -->
-                                <div class="col-sm-9">
-                                  <input type="text" class="form-control" id="location" name="location" placeholder="LOCATION">
-                                </div>
-                              </div>
+                              
                               <div class="form-group row">
                                 <!-- <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Password</label> -->
                                 <div class="col-sm-9">

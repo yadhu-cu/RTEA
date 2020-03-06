@@ -1,10 +1,22 @@
+<?php
+SESSION_START();
+if(!isset($_SESSION['id'])){
+  echo $_SESSION['id'];
+	header('location:index.html');
+ }
+ else{
+   $id=$_SESSION['id'];
+ 
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Stellar Admin</title>
+    <title>RTEA MARKETING</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="../../vendors/flag-icon-css/css/flag-icon.min.css">
