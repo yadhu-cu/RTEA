@@ -17,7 +17,13 @@ $description = $_POST['description'];
 
 $query = "INSERT INTO `market_add`(`id`,`adName`,`catProd`,`productName`,`description`) VALUES('$id','$adName','$cat_Ad','$prodName','$description')";
 $result = mysqli_query($con,$query);
+header('location:home.php');
+$check = mysqli_query($con,"SELECT 	Add_ID FROM `market_add`");
+while($row=mysqli_fetch_array($check))
+{
+  $adId=$row[0];
+}
 
-echo "success";
-
+$_SESSION['ADD']= $adId;
+header('location:home.php');
 ?>

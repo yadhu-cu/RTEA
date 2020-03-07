@@ -266,18 +266,29 @@ if(!isset($_SESSION['id'])){
                         </div>
                       </div>
                       
-                      <button type="submit" class="btn btn-primary mr-2">Request</button>
+                      <!-- <button type="submit" class="btn btn-primary mr-2">Request</button> -->
+                      <button type="submit" name='request' class="btn btn-primary mr-2">Request</button>
                       <button class="btn btn-light">Cancel</button>
                     </form>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
+              <?php
+              
+              $AddID =$_SESSION['ADD'];
+              if(!isset($AddID)){
+                echo "<div class='card' hidden>";
+              }
+              else {
+                echo "<div class='card'>";
+              }
+              ?>
+                <!-- <div class="card" hidden> -->
                   <div class="card-body">
                     <h4 class="card-title">AD DETAILS </h4>
                     <p class="card-description"></p>
-                    <form class="forms-sample" action="ad_details.php" method="POST">
+                    <form class="forms-sample" action="ad_details.php" method="POST" enctype="multipart/form-data">
                       <div class="form-group row">
                         <!-- <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Password</label> -->
                         <div class="col-sm-12">
@@ -291,13 +302,13 @@ if(!isset($_SESSION['id'])){
                         </div>
                       </div>
                       <div class="form-group">
-                        <input type="file" name="image" id="image" class="file-upload-default">
-                        <div class="input-group col-xs-12">
+                        <input type="file" name="fileToUpload" id="image" >
+                        <!-- <div class="input-group col-xs-12">
                           <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
                           <span class="input-group-append">
                             <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
                           </span>
-                        </div>
+                        </div> -->
                       </div>
                       <div class="form-group row">
                         <!-- <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Re Password</label> -->
@@ -313,7 +324,18 @@ if(!isset($_SESSION['id'])){
                 </div>
               </div>
               <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
+             
+              <?php
+              
+              $AddID =$_SESSION['ADD'];
+              if(!isset($AddID)){
+                echo "<div class='card' hidden>";
+              }
+              else {
+                echo "<div class='card'>";
+              }
+              ?>
+                <!-- <div class="card" hidden> -->
                   <div class="card-body">
                     <h4 class="card-title">MEMBERSHIP DETAILS</h4>
                     <p class="card-description"></p>
