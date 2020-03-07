@@ -24,6 +24,6 @@ while($row=mysqli_fetch_array($check))
   $adId=$row[0];
 }
 
-$_SESSION['ADD']= $adId+1;
-
+$_SESSION['ADD']= $adId;
+header('location:home.php');
 ?>
