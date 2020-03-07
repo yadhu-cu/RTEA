@@ -273,7 +273,17 @@ if(!isset($_SESSION['id'])){
                 </div>
               </div>
               <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
+              <?php
+              
+              $AddID =$_SESSION['ADD'];
+              if(!isset($AddID)){
+                echo "<div class='card' hidden>";
+              }
+              else {
+                echo "<div class='card'>";
+              }
+              ?>
+                <!-- <div class="card" hidden> -->
                   <div class="card-body">
                     <h4 class="card-title">AD DETAILS </h4>
                     <p class="card-description"></p>
@@ -313,7 +323,8 @@ if(!isset($_SESSION['id'])){
                 </div>
               </div>
               <div class="col-md-4 grid-margin stretch-card">
-                <div class="card">
+             
+                <div class="card" hidden>
                   <div class="card-body">
                     <h4 class="card-title">MEMBERSHIP DETAILS</h4>
                     <p class="card-description"></p>
